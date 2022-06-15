@@ -4,19 +4,19 @@ const mode = process.argv[2]
  * https://devcenter.heroku.com/articles/node-best-practices
  */
 
-switch(mode) {
-  case 'dev':
-    require('dotenv').config()
-    process.env.PORT = 3001
-    process.env.NODE_ENV = 'development'
-    console.warn('Config loaded from local .env')
-    break
-  case 'local':
-    require('dotenv').config()
-    process.env.PORT = 3000
-    process.env.NODE_ENV = 'local'
-    console.warn('Config loaded from local .env')
-    break
+//**switch(mode) {
+  //case 'dev':
+    //require('dotenv').config()
+    //process.env.PORT = 3001
+    //process.env.NODE_ENV = 'development'
+    //console.warn('Config loaded from local .env')
+    //break
+  //case 'local':
+    //require('dotenv').config()
+    //process.env.PORT = 3000
+    //process.env.NODE_ENV = 'local'
+    //console.warn('Config loaded from local .env')
+    //break
   default:
     // load from Heroku config vars
 }
