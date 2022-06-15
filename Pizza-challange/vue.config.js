@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 module.exports = {
   devServer: {
-    port:$PORT,
+    port: 8080,
     proxy: ''
   },
   configureWebpack: {
