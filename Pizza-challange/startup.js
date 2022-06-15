@@ -7,13 +7,13 @@ const mode = process.argv[2]
 switch(mode) {
   case 'dev':
     require('dotenv').config()
-    process.env.PORT = 3001
+    process.env.PORT = $PORT
     process.env.NODE_ENV = 'development'
     console.warn('Config loaded from local .env')
     break
   case 'local':
     require('dotenv').config()
-    process.env.PORT = 3000
+    process.env.PORT = $PORT
     process.env.NODE_ENV = 'local'
     console.warn('Config loaded from local .env')
     break
