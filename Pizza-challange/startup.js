@@ -23,7 +23,7 @@ const mode = process.argv[2]
 
 
 const app = require('./server')
-const port = process.env.PORT
+const port = process.env.PORT || 80
 
 app.listen(port, () => {
   console.warn(`Express server started in ${process.env.NODE_ENV} environment`)
